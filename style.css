@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    background-color: #093545;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+.signin-text{
+    color: white;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+/* Input Fields */
+.login-input{
+    padding: 0.7rem 4.5rem 0.7rem 1.5rem;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #224957;
+    color: white;
+    outline: none;
+    margin-bottom: 30px;
+}
+.password-input{
+    padding: 0.7rem 4.5rem 0.7rem 1.5rem;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #224957;
+    color: white;
+    outline: none;
+    margin-bottom: 10px;
+}
+::placeholder{
+    position: relative;
+    color: white;
+    font-size: 14px;
+    padding-right: 20px;
+}
+/* TEXT */
+.text{
+    display: flex;
+    column-gap: 13px;
+    margin-bottom: 10px;
+}
+.check-box{
+    position: relative;
+    outline: none;
+    width: 18px;
+    height: 17px;
+    top: 20px;
+    left: 5px;
+}
+.forgot-Password{
+    position: relative;
+    color: #20DF7F;
+ 
+    font-size: 14px;
+    top: 1.7px;
+}
+.btn{
+    padding: 0.7rem 7.5rem;
+    border-radius: 10px;
+    background-color: #20DF7F;
+    outline: none;
+    margin-bottom: 20px;
+    border: transparent;
+    color: white;
+}
+.layer1{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.layer2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.dark{
+    position: absolute;
+    bottom: 1px;
+    left: 10px;
+    right: 0px;
+}
+
+/* CHECKBOX */
+
+.container2 {
+    display: block;
+    position: relative;
+    top: 15px;
+    right: 5px;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    border-radius:5px;
+    height: 17px;
+    width: 18px;
+    background-color: #224957;
+  }
+  
+
+  /* When the checkbox is checked, add a blue background */
+  .container2 input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container2 input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container2 .checkmark:after {
+    left: 5.2px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
